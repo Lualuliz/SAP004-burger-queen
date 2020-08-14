@@ -41,14 +41,14 @@ const Hall = () => {
 
   return (
     <main className="main-hall">
-    {/*}  <video
+       <video
         src={BackgroundVideo}
         type="video/mp4"
         autoPlay
         loop
         muted
         className="video-background"
-  ></video>*/}
+      ></video> 
       <div className="div-hall">
         <div className="tabs-container">
           <Button
@@ -75,38 +75,45 @@ const Hall = () => {
             />
           </div>
         </div>
-        <OrderCard newOrder={orders} />
-      </div>
-      <section className="order-list open-orders">
-          <h2 className="list-title">Para Entregar:</h2>
-          
-            <div className="open-card">
-              <div className="order-top">
+        <div className="card-position">
+          <OrderCard newOrder={orders} />
+          <section>
+            <div className="done-card">
+              <h2 className="list-title">Para Entregar:</h2>
+
+              <div className="open-card">
+                <div className="order-top">
+                  <p>
+                    <strong>Nº do pedido: 1 </strong>
+                  </p>
+                  <p>
+                    <strong>Nº da mesa:1 </strong>
+                  </p>
+                </div>
                 <p>
-                  <strong>Nº do pedido: 1 </strong>
-                 </p>
+                  <strong>Cliente: Darth Verde </strong>
+                </p>
                 <p>
-                  <strong>Nº da mesa:1 </strong>
-                 </p>
+                  <strong>Status:Pedido Pronto </strong>
+                </p>
+
+                <p>
+                  <strong>Itens: Misto Quente,Café Americano </strong>
+                </p>
+                <p>
+                  <strong className="itens">Total: R$ 15,00 </strong>
+                </p>
+
+                <button type="submit" className="done-button-hall">
+                  {" "}
+                  Entregar Pedido
+                </button>
               </div>
-              <p>
-                <strong>Cliente: Darth Verde </strong>  
-              </p>
-              <p>
-                <strong>Status:Pedido Pronto </strong>  
-              </p>
-              <br></br>
-              <p className="itens-box">
-                <strong className="itens">Itens: Misto Quente,Café Americano </strong> 
-              </p>
-              <p className="itens-box">
-                <strong className="itens">Total: R$ 15,00 </strong> 
-              </p>
-              <br></br>
-              <button type="submit" className="done-button" > Entregar Pedido</button>
             </div>
-        
-        </section>
+          </section>
+        </div>
+      </div>
+      
 
     </main>
   );

@@ -3,6 +3,7 @@ import firebase from "../../firebase";
 import BackgroundVideo from "../video/background-video-kitchen.mp4";
 import "../../App.css";
 import "./Kitchen.css";
+//import Button from "../Button/Button";
 
 const Kitchen = () => {
   const [open, setOpen] = useState([]);
@@ -23,14 +24,14 @@ const Kitchen = () => {
 
   return (
     <div className="kitchen">
-    {/*}  <video
+       <video
         src={BackgroundVideo}
         type="video/mp4"
         autoPlay
         loop
         muted
         className="video-background"
-  ></video>*/}
+  ></video>
       <div className="kitchen-display">
         <section className="order-list open-orders">
           <h2 className="list-title">Pedidos Abertos</h2>
@@ -54,10 +55,17 @@ const Kitchen = () => {
                 <strong>Status: </strong>
                 {element.status}
               </p>
-              <p>
-                <strong>Itens: </strong>
+              <br></br>
+              <p className="itens-box">
+                <strong className="itens">Itens: </strong>
                 {element.pedido}
               </p>
+              <br></br>
+              <button
+                type="submit"
+                className="done-button"
+              > Pronto
+              </button>
             </div>
           ))}
         </section>
