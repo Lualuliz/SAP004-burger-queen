@@ -1,4 +1,3 @@
-/* SOFT RESET */
 * {
   padding: 0;
   margin: 0;
@@ -13,17 +12,24 @@
   width: fit-content;
   height: fit-content;
   margin-top: 30px;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 10px 10px 10px;
   font-size: 1em;
+  font-family: "Bree Serif", serif;
 }
 
 .menu-title {
   margin-top: 10px;
   font-size: 2em;
+  color: black;
+  text-shadow: none;
 }
 
 .order-number {
   font-size: 2em;
+}
+
+.order-details {
+  display: inline-block;
 }
 
 .order-details-input {
@@ -36,6 +42,7 @@
   text-align: center;
   font-size: 2em;
   display: block;
+  font-family: "Bree Serif", serif;
 }
 
 .order-item {

@@ -6,16 +6,12 @@ import firebase from "../../firebase";
 import BackgroundVideo from ".././video/background-video-hall.mp4";
 import "./Hall.css";
 
+
 const Hall = () => {
   const [breakfast, setBreakfast] = useState(true);
   const [allday, setAllday] = useState(false);
   const [orders, setOrders] = useState([]);
-  // const [order, setOrder] = useState(1);
-  // const [table, setTable] = useState("");
-  // const [client, setClient] = useState("");
   const [menu, setMenu] = useState("");
-  // const [resume, setResume] = useState("");
-  const [total, setTotal] = useState(0);
 
   const getMenu = ({ name, state }) => {
     firebase
@@ -26,7 +22,6 @@ const Hall = () => {
       .then((docRef) => {
         const itemData = docRef.data();
         state(() => itemData);
-        // console.log(itemData);
       });
   };
 
@@ -44,18 +39,16 @@ const Hall = () => {
     console.log(orders);
   };
 
-  
-   // console.log(orders);
   return (
     <main className="main-hall">
-      <video
+    {/*}  <video
         src={BackgroundVideo}
         type="video/mp4"
         autoPlay
         loop
         muted
         className="video-background"
-  ></video>
+  ></video>*/}
       <div className="div-hall">
         <div className="tabs-container">
           <Button
@@ -84,6 +77,37 @@ const Hall = () => {
         </div>
         <OrderCard newOrder={orders} />
       </div>
+      <section className="order-list open-orders">
+          <h2 className="list-title">Para Entregar:</h2>
+          
+            <div className="open-card">
+              <div className="order-top">
+                <p>
+                  <strong>Nº do pedido: 1 </strong>
+                 </p>
+                <p>
+                  <strong>Nº da mesa:1 </strong>
+                 </p>
+              </div>
+              <p>
+                <strong>Cliente: Darth Verde </strong>  
+              </p>
+              <p>
+                <strong>Status:Pedido Pronto </strong>  
+              </p>
+              <br></br>
+              <p className="itens-box">
+                <strong className="itens">Itens: Misto Quente,Café Americano </strong> 
+              </p>
+              <p className="itens-box">
+                <strong className="itens">Total: R$ 15,00 </strong> 
+              </p>
+              <br></br>
+              <button type="submit" className="done-button" > Entregar Pedido</button>
+            </div>
+        
+        </section>
+
     </main>
   );
 };

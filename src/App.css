@@ -47,8 +47,6 @@ label {
   margin-right: 5px;
 }
 
-
-
 .main-title {
   display: flex;
   justify-content: center;
@@ -78,11 +76,15 @@ label {
   height: fit-content;
   border-bottom: solid 2px #d56877;
   border-radius: 50px;
-  background-color:#FFC8FB;
+  background-color: #ffc8fb;
   text-align: center;
   font-size: 2em;
   display: block;
   margin-bottom: 30px;
+}
+
+input:focus {
+  background-color: rgba(151, 14, 163, 0.24);
 }
 
 .login {
@@ -113,7 +115,7 @@ label {
 
 .form-button {
   background-color: #948392;
-  color:white;
+  color: white;
   border-radius: 40px 10px 40px 10px;
   font-size: 1.8em;
   font-weight: 600;

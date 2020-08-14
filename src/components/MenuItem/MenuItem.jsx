@@ -1,5 +1,5 @@
 import React from "react";
-import "./MenuItem.css"
+import "./MenuItem.css";
 
 const MenuItem = (props) => {
   return (
@@ -12,8 +12,7 @@ const MenuItem = (props) => {
     >
       <div className="menu-item">
         <div className="menu-button">
-          <div className="input menu-font">
-            {" "}
+          <div className="menu-font">
             <strong>{props.name}</strong>
           </div>
           <p className="menu-font-price">
