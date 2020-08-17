@@ -62,8 +62,8 @@ const OrderDetails = (props) => {
   };
 
   const conta = props.newOrder.reduce((orders, orderItem) => {
-    const deusmeajuda = Number(orderItem.split("R$")[1]);
-    return orders + deusmeajuda;
+    const numberSplit = Number(orderItem.split("R$")[1]);
+    return orders + numberSplit;
   }, 0);
 
   const prevent = (event) => {

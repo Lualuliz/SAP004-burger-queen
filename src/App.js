@@ -1,10 +1,10 @@
 import React from "react";
 import firebase from "./firebase";
 import Header from "./components/Header/Header";
-import Hall from "./components/Hall/Hall";
-import Kitchen from "./components/Kitchen/Kitchen";
-import Login from "./components/Login/Login";
-import Register from "./components/Register/Register";
+import Hall from "./pages/Hall/Hall";
+import Kitchen from "./pages/Kitchen/Kitchen";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
 import ButtonLogout from "./components/LogoutButton/LogoutButton";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

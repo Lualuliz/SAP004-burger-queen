@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import firebase, { firebaseStore, firebaseAuth } from "../../firebase";
-import Input from "../Input/Input";
-import InfoBox from "../InfoBox/InfoBox";
-import Button from "../Button/Button";
+import Input from "../../components/Input/Input";
+import InfoBox from "../../components/InfoBox/InfoBox";
+import Button from "../../components/Button/Button";
 import { urls } from "../../Routes";
 import "./Register.css";
 

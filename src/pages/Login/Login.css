@@ -1,7 +1,14 @@
 body {
-  background-image: url("../images/background.jpg");
-  background-size: 100%;
-  background-repeat: repeat-y;
+  background-image: url("../../components/images/background.jpg");
+  position: relative;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 .p-bottom {

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { firebaseAuth, firebaseStore } from "../../firebase";
 import { urls } from "../../Routes";
 import { useHistory } from "react-router-dom";
-import Input from "../Input/Input";
-import Button from "../Button/Button";
-import InfoBox from "../InfoBox/InfoBox";
-import "./Login.css";
+import Input from "../../components/Input/Input";
+import Button from "../../components/Button/Button";
+import InfoBox from "../../components/InfoBox/InfoBox";
+import "../Login/Login.css";
 
 function Login() {
   const [email, setEmail] = useState("");

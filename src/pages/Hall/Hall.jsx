@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import OrderCard from "../OrderCard/OrderCard";
-import Menu from "../Menu/Menu";
-import Button from "../Button/Button";
+import OrderCard from "../../components/OrderCard/OrderCard";
+import Menu from "../../components/Menu/Menu";
+import Button from "../../components/Button/Button";
 import firebase from "../../firebase";
-import BackgroundVideo from ".././video/background-video-hall.mp4";
+import BackgroundVideo from "../../components/video/background-video-hall.mp4";
 import "./Hall.css";
 
 
@@ -41,14 +41,14 @@ const Hall = () => {
 
   return (
     <main className="main-hall">
-       <video
+     {/*}  <video
         src={BackgroundVideo}
         type="video/mp4"
         autoPlay
         loop
         muted
         className="video-background"
-      ></video> 
+  ></video> */}
       <div className="div-hall">
         <div className="tabs-container">
           <Button
